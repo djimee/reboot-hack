@@ -2,7 +2,7 @@ import React from 'react'
 
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
-function navbar() {
+function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
             <div className="container">
@@ -10,7 +10,10 @@ function navbar() {
                     SME2SME
                 </Link>
                 <Link className="navbar-brand" to={'/dashboard'}>
-                    SME2SMEsss
+                    Dashboard
+                </Link>
+                <Link className="navbar-brand" to={'/profile'}>
+                    My Profile
                 </Link>
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav ml-auto">
@@ -31,4 +34,4 @@ function navbar() {
     )
 }
 
-export default navbar
+export default Navbar
